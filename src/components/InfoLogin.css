@@ -1,0 +1,63 @@
+
+.form-container input[type="email"], 
+.form-container input[type="password"], 
+.form-container button {
+    width: 70%; /* or a fixed pixel value if you prefer */
+    max-width: 500px; /* to ensure it doesn't get too wide on larger screens */
+    margin: 10px 0; /* added some margin for separation */
+  
+}
+
+.form-container input[type="email"], 
+.form-container input[type="password"] {
+    border: 2px solid #6DAFFE; /* Adjust the border thickness and color as needed */
+    border-radius: 10px; /* Optional: This gives rounded corners */
+    padding: 8px 12px; /* Some padding to make the input content more visually separated from the border */
+}
+
+#logo{
+    width: 245px;
+    height: 90px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.form-container {
+    width: 40%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.image-container {
+    width: 60%;
+    background-image: url('../assets/foto_login.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.inputLogin {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #6DAFFE;
+    color: white;
+    cursor: pointer;
+}

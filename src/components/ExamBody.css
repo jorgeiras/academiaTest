@@ -1,0 +1,32 @@
+.questiondiv{
+    margin-top: 40px;
+    text-align: left;
+}
+
+.questiontext{
+         /* Increase font size */
+    font-weight: bold;        /* Make the question bold */
+    margin-bottom: 15px;      /* Add space below the question */
+    margin-top: 20px;         /* Add space above the question */
+    padding: 10px;            /* Add some padding around the question */
+    background-color: #EDF6FF;/* Subtle background color for the question */
+    border-bottom: 2px solid #ddd; /* Border below the question */
+}
+
+
+
+
+.correct-answer {
+    border: 2px solid green;
+   
+    
+}
+
+.correct-answer-text {
+    color: green;
+  }
+  
+.incorrect-answer {
+    border: 2px solid red;
+    
+}
