@@ -66,6 +66,7 @@ function ExamBody() {
         })
         setResult(score);
     }
+    
 
     const handleConfirmButton = () =>{
         calculateResult()
