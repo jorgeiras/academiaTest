@@ -19,7 +19,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/academiaTest">
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<Login /> } />
