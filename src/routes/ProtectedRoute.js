@@ -1,5 +1,4 @@
 import {Navigate, Outlet} from 'react-router-dom';
-import { useAuth } from '../context/AuthProvider';
 import Cookies from 'js-cookie';
   
   export const ProtectedRoute = ({ children }) => {

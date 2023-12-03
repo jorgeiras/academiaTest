@@ -13,9 +13,9 @@ function Footer(){
                 </div>
 
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li className="ms-3"><a className="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlinkHref="#twitter"></use></svg></a></li>
-                <li className="ms-3"><a className="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlinkHref="#instagram"></use></svg></a></li>
-                <li className="ms-3"><a className="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlinkHref="#facebook"></use></svg></a></li>
+                <li className="ms-3"><a className="text-muted" >{/*href="#"*/}<svg class="bi" width="24" height="24"><use xlinkHref="#twitter"></use></svg></a></li>
+                <li className="ms-3"><a className="text-muted" ><svg class="bi" width="24" height="24"><use xlinkHref="#instagram"></use></svg></a></li>
+                <li className="ms-3"><a className="text-muted" ><svg class="bi" width="24" height="24"><use xlinkHref="#facebook"></use></svg></a></li>
                 </ul>
             
         </div>

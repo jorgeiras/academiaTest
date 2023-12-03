@@ -10,8 +10,7 @@ import { AuthProvider } from './context/AuthProvider';
 import { ProtectedRoute } from './routes/ProtectedRoute';
 import NoMatch from './components/NoMatch';
 import Cookies from 'js-cookie';
-import { useNavigate } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 
 

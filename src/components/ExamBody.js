@@ -60,7 +60,7 @@ function ExamBody() {
         
         getExam.forEach((question, index)  =>{
             const correctAnswerIndex = answerKey[question.solution];
-            if(correctAnswerIndex == userAnswers[index]){
+            if(correctAnswerIndex === userAnswers[index]){
                 score = score + 0.5;
             }
         })

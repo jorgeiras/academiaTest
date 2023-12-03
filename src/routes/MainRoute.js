@@ -1,8 +1,6 @@
 
 import NavbarComp from '../components/NavBarComp';
-import ExamBody from '../components/ExamBody';
 import Footer from '../components/Footer';
-import { Outlet } from 'react-router-dom';
 
 function MainRoute({ children }) {
   return (

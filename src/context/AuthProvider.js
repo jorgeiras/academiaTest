@@ -1,5 +1,5 @@
 // AuthContext.js
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import Cookies from 'js-cookie';
@@ -31,12 +31,12 @@ export const AuthProvider = ({ children }) => {
             if(!error.response.data){
               console.error('Login failed:', error);
             }
-            else if(error.response.data.non_field_errors == 'Unable to log in with provided credentials.'){
+            else if(error.response.data.non_field_errors === 'Unable to log in with provided credentials.'){
                 console.error('error de credenciales');
                 setResultErrorMessage('Usuario o contraseña incorrecta');
                 setResultRequest(true);
             }
-            else if(error.response.data.username == 'This field may not be blank.'  || error.response.data.password == 'This field may not be blank.'){
+            else if(error.response.data.username === 'This field may not be blank.'  || error.response.data.password === 'This field may not be blank.'){
                 console.error('Fallo en blanco');
                 setResultErrorMessage('Usuario o contraseña en blanco');
                 setResultRequest(true);
