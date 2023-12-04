@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ExamBody from './components/ExamBody';
-import { BrowserRouter, Route, Routes, Navigate  } from 'react-router-dom';
+import { HashRouter, Route, Routes, Navigate  } from 'react-router-dom';
 import MainRoute from './routes/MainRoute';
 import Login from './routes/Login'
 import Profile from './components/Profile';
@@ -18,7 +18,7 @@ function App() {
 
 
   return (
-    <BrowserRouter basename="/academiaTest">
+    <HashRouter>
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<Login /> } />
@@ -32,7 +32,7 @@ function App() {
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
